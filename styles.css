@@ -1,0 +1,92 @@
+/* src/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  flex: 1; /* Make buttons grow to fill the space */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.submit-button {
+  background-color: #007bff;
+}
+
+.accept-button {
+  background-color: #28a745;
+}
+
+.decline-button {
+  background-color: #dc3545;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.accept-button:hover {
+  background-color: #218838;
+}
+
+.decline-button:hover {
+  background-color: #c82333;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}

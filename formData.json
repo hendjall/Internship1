@@ -1,0 +1,45 @@
+[
+    {
+      "id": "continent",
+      "label": "Continent",
+      "type": "select",
+      "options": ["Africa", "USA", "Asia", "Europe", "Australia"]
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "dependsOn": "continent",
+      "options": {
+        "Africa": ["Tunisia", "Egypt", "South Africa"],
+        "USA": ["California", "Texas", "New York"],
+        "Asia": ["China", "India", "Japan"],
+        "Europe": ["Germany", "France", "United Kingdom"],
+        "Australia": ["New South Wales", "Victoria", "Queensland"]
+      }
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "type": "select",
+      "dependsOn": "country",
+      "options": {
+        "Tunisia": ["Tunis", "Sfax", "Sousse", "Monastir", "Gabes", "Nabeul"],
+        "Egypt": ["Cairo", "Alexandria", "Giza", "Shubra El Kheima", "Port Said", "Suez"],
+        "South Africa": ["Gauteng", "Western Cape", "KwaZulu-Natal", "Eastern Cape", "Mpumalanga"],
+        "California": ["Los Angeles", "San Francisco", "San Diego", "San Jose", "Fresno"],
+        "Texas": ["Houston", "Dallas", "Austin", "San Antonio", "Fort Worth"],
+        "New York": ["New York City", "Buffalo", "Rochester", "Yonkers", "Syracuse"],
+        "China": ["Beijing", "Shanghai", "Chongqing", "Tianjin", "Guangzhou"],
+        "India": ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai"],
+        "Japan": ["Tokyo", "Osaka", "Nagoya", "Sapporo", "Fukuoka"],
+        "Germany": ["Berlin", "Munich", "Frankfurt", "Hamburg", "Stuttgart"],
+        "France": ["Paris", "Lyon", "Marseille", "Toulouse", "Nice"],
+        "United Kingdom": ["London", "Manchester", "Birmingham", "Leeds", "Glasgow"],
+        "New South Wales": ["Sydney", "Newcastle", "Wollongong", "Central Coast"],
+        "Victoria": ["Melbourne", "Geelong", "Ballarat", "Bendigo"],
+        "Queensland": ["Brisbane", "Gold Coast", "Sunshine Coast", "Townsville", "Cairns"]
+      }
+    }
+  ]
+  
